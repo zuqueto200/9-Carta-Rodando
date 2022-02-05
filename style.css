@@ -1,0 +1,47 @@
+* {
+    margin: 20px 0px;
+    padding: 0;
+}
+
+body {
+    perspective: 800px;
+}
+
+#carta {
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: all 1s;
+    
+}
+
+.flip {
+    
+    transform: rotatey(180deg);
+ 
+    
+}
+
+.face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    width: 176px;
+    height: 245px;
+    font-size: 40px;
+    position: absolute;
+}
+
+#frente {
+    background-image: url('img/frente.png');
+    transform: rotateY(180deg);
+   
+}
+
+#verso {
+    background-image: url('img/verso.png');
+    
+    
+}
