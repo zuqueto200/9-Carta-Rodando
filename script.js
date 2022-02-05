@@ -1,4 +1,5 @@
 const carta = document.getElementById("carta")
-carta.addEventListener('click',function(){
+carta.addEventListener('click', function () {
     carta.classList.toggle('flip')
 })
+

@@ -1,9 +1,5 @@
-* {
-    margin: 20px 0px;
-    padding: 0;
-}
-
 body {
+    margin: 30px 0 0 0;
     perspective: 800px;
 }
 
@@ -12,36 +8,23 @@ body {
     justify-content: center;
     transform-style: preserve-3d;
     transition: all 1s;
-    
 }
 
 .flip {
-    
     transform: rotatey(180deg);
- 
-    
 }
 
 .face {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+    position: absolute;
     width: 176px;
     height: 245px;
-    font-size: 40px;
-    position: absolute;
 }
 
 #frente {
-    background-image: url('img/frente.png');
+    background-image: url('img/verso.png');
     transform: rotateY(180deg);
-   
 }
 
 #verso {
-    background-image: url('img/verso.png');
-    
-    
+    background-image: url('img/frente.png');
 }
