@@ -11,7 +11,7 @@ body {
 }
 
 .flip {
-    transform: rotatey(180deg);
+    transform: rotateY(-180deg);
 }
 
 .face {
@@ -20,11 +20,14 @@ body {
     height: 245px;
 }
 
-#frente {
-    background-image: url('img/verso.png');
-    transform: rotateY(180deg);
-}
-
 #verso {
     background-image: url('img/frente.png');
+    backface-visibility: hidden;
+    
+}
+
+#frente {
+    background-image: url('img/verso.png');
+
+    
 }
